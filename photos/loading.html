@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<!--
+    	作者：1617567859@qq.com
+    	时间：2018-06-27
+    	描述：模拟数据加载
+    -->
+	<head>
+		<meta charset="UTF-8">
+		
+        	<meta http-equiv="refresh" content="1;url=index.html">
+       
+		<title>资源加载中</title>
+		<style>
+			#div{
+				width: 90%;
+				height: auto;
+				/*background-color:whitesmoke ;*/
+				margin: 0px auto;
+			}
+			#display{
+				width: 10%;
+				height: auto;
+				margin: 200px auto;
+				
+			}
+				#display img{
+				width: 160px;
+				height: 100px;
+				margin: 0px auto;
+			}
+			
+			@media screen and (max-width: 1024px) {
+				
+			}
+
+			@media screen and (max-width: 960px) {
+				#display{
+				width: 10%;
+				height: auto;
+				margin: 200px auto;
+				
+			}
+				#display img{
+				width: 80px;
+				height: 50px;
+				margin: 0px auto;
+			}
+			}
+			
+			@media screen and (max-width: 766px) {
+				#display{
+				width: 10%;
+				height: auto;
+				margin: 300px auto;
+				
+			}
+				#display img{
+				width: 50px;
+				height: 30px;
+				margin: 0px auto;
+			}
+			}
+			
+			@media screen and (max-width: 640px) {
+				#display{
+				width: 10%;
+				height: auto;
+				margin: 300px auto;
+				
+			}
+				#display img{
+				width: 100px;
+				height: 60px;
+				margin: 0px auto;
+			}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div">
+			<div id="display"></div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	document.getElementById("display").innerHTML="<img alt='' title='正在加载中 ...' src='loding.gif' />";//初始化内容
+</script>
