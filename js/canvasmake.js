@@ -1,3 +1,9 @@
+/*
+ 
+ * 作者：1617567859@qq.com
+	时间：2018-06-29
+	描述：heart 
+ * */
 var container;
 
 	var camera, scene, renderer;
