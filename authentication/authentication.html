@@ -10,87 +10,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>HXM-authentication</title>
-		<style>
-			
-			#div{
-				width: 90%;
-				height: auto;
-				background-color: #F0EFEE;
-				margin: 0px auto;
-				padding:0px;
-			}
-			.div{
-				width: 20%;
-				height: auto;
-				background-color: #DBDBDB;
-				margin: 0px auto;
-				padding: 30px 20px;
-				
-				
-			}
-			.title{
-				display: block;
-				width: 90%;
-				height: auto;
-				margin: 0px auto;
-				text-align: center;
-			}
-			.bt{
-				width: 120px;
-				height: 40px;
-				text-align: center;
-				line-height: 40px;
-				background-color: green;
-				margin: 10px auto;
-				border-radius: 5px;
-				color: white;
-				cursor: pointer;
-			}
-			.authentication{
-				color: #C0C0C0;
-				width: 90%;
-				height: 30px;
-				margin: 12px auto;
-				padding: 3px;
-			}	
-			
-			@media screen and (max-width: 1024px) {
-				.div {
-					padding: 2em 10% 2em;
-				}
-				.div {
-			        font-size:1.4em;
-			    }
-			}
-
-			@media screen and (max-width: 960px) {
-				.div{
-					padding: 2em 10% 2em;
-				}
-				.div {
-			        font-size:1.2em;
-			    }
-			}
-			
-			@media screen and (max-width: 766px) {
-				.div {
-			        font-size:1.0em;
-			    }
-			}
-			
-			@media screen and (max-width: 640px) {
-				.div {
-					width: 60%;
-					
-					padding: 2em 10% 2em;
-					font-size: 0.9em;
-				}
-				.authentication{
-					width: 100%;
-					height: 20px;
-					
-				}
-			}
+		<link rel="stylesheet" href="authentication.css" />
+		<script type="text/javascript" src="../js/jquery-3.2.1.min.js" ></script>
+		<script type="text/javascript" src="authentication.js" ></script>
 		</style>
 	</head>
 	<body>
@@ -107,19 +29,4 @@
 		</div>
 	</body>
 </html>
-<script type="text/javascript" src="../js/jquery-3.2.1.min.js" ></script>
-<script type="text/javascript">
-	$(document).ready(function(){
-		$(".bt").click(function(){
-			if($("#authentication").val()=="520胡雪梅"){
-				window.location.href="../index1.html";
-			}
-			else{
-				alert("验证信息错误！");
-				window.location.href="../index.html";
-			}
-		})
-		
-	})
-	
-</script>
+
