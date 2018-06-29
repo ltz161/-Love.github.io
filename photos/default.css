@@ -1,0 +1,8 @@
+body{margin:0;padding:0;background:#ffe;font-size:12px;overflow:auto}
+#mainDiv{margin:0;padding:0;width: 1000px;height: auto;}
+#garden{width:0px;height:auto;margin:0;padding:0;}
+#elapseClock{text-align:right;font-size:18px;margin-top:0px;margin-bottom:10px}
+#wordss{margin-left:300px;padding:0;font-family:"sans-serif";font-size:21px;color:#666;position: relative;  
+    }
+#messages{display:none;width:500px;margin: 0px auto;}
+#elapseClock .digit{font-family:"digit";font-size:24px}
