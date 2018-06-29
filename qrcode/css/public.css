@@ -1,0 +1,54 @@
+body {
+                width: 100%;
+                padding: 0;
+                background-color: #FFFFF6;
+            }
+            h1, h2 {
+                text-align: center;
+            }
+            input[type=text] {
+                display: block;
+                width: 380px;
+                height: 30px;
+                margin: 0 auto;
+                font-size: 14pt;
+            }
+            input[type=file] {
+                display: block;
+                width: 380px;
+                height: 30px;
+                margin: 0 auto;
+            }
+            label {
+                display: block;
+                width: 380px;
+                height: 30px;
+                margin: 0 auto;
+            }
+            .group {
+                width: 400px;
+                height: 195px;
+                margin: 0 auto;
+            }
+            .clear {
+                clear: both;
+            }
+            #qr {
+                float: left;
+                width: 195px;
+                height: 195px;
+                margin: 0 auto;
+                margin-right: 10px;
+            }
+            #image {
+                float: left;
+                width: 195px;
+                height: 195px;
+                margin: 0 auto;
+                margin-top: 12px;
+            }
+            #combine {
+                width: 195px;
+                height: 195px;
+                margin: 0 auto;
+            }
