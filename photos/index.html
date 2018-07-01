@@ -1,8 +1,3 @@
-<!--
-    	作者：1617567859@qq.com
-    	时间：2018-06-26
-    	描述：HTML5 3D相册
-    -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -431,9 +426,18 @@ cursor: pointer;
 user agent stylesheetlabel {
 cursor: default;
 }
-
+.image {
+            border-radius:50%;
+            width:80px;
+            height:80px;
+            margin:100px auto;
+            display:block;
+            border:dotted solid #666;
+            padding:5px;
+        }
 </style>
 <link href="default.css" type="text/css" rel="stylesheet">
+
 <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
 
 <script type="text/javascript" src="functions.js"></script>
@@ -454,15 +458,56 @@ cursor: default;
 		</div>
 	</label>
 	<div id="mainDiv">
-		<canvas id="garden"></canvas>
-			<div id="wordss">
-				<div id="messages">
-					Time together:
-					<div id="elapseClock"></div>
-				</div>		
-			</div>
-	</div>
 	
+					
+						<canvas id="garden"></canvas>
+						<div id="wordss">
+							<div id="messages">
+								Time together:
+								<div id="elapseClock"></div>
+							</div>
+							
+						</div>
+					</div>
+			</div>
+			<div>
+				
+        <img src="1.jpg" id="img" class="image"   />
+        <div id="myAudio" style="margin:0 auto;">
+			<audio autoplay="true">
+				<source src="music.ogg" />
+				
+			</audio>
+		</div>
+		
+    </div>
+ 
+    <script type="text/javascript">
+        var timeout, rotate = 0;
+        function startAnim() {
+            timeout = setInterval(function () {
+                var img = document.getElementById("img");
+                var rotateStyle = "rotate(" + rotate + "deg)";
+                img.style.transform = rotateStyle;
+                img.style["-moz-transform"] = rotateStyle;
+                img.style["-webkit-transform"] = rotateStyle;
+                img.style["-o-transform"] = rotateStyle;
+                img.style["-ms-transform"] = rotateStyle;
+ 
+                rotate += 6;
+                if (rotate > 360) {
+                    rotate = 0;
+                }
+            }, 30);
+        }
+        function stopAnim() {
+            clearInterval(timeout);
+            timeout = null;
+            
+        }
+ 
+        startAnim();
+    </script>
 </div>
 <!-- end of dhteumeuleu nav menu -->
 <div style="position: absolute; top: 20px; right: 20px;">    <style type="text/css">
@@ -591,3 +636,10 @@ if (!document.createElement('canvas').getContext) {
 </script>
 
     
+<script type="text/javascript" src="jquery.min.js" ></script>
+		<script type="text/javascript" src="AudioPlayer.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#myAudio").initAudio();
+			});
+		</script>
