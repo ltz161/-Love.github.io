@@ -2,7 +2,7 @@ var minSize=5;
 var maxSize=50;
 var newOn=150;
 var xueColor="#FFF";
-var xue=$("<div></div>").css({"position":"absolute","top":"-50px"}).html("❄");
+var xue=$("<div style='cursor: pointer;'></div>").css({"position":"absolute","top":"-50px"}).html("❄");
 //var xue=$("<div></div>").css({"position":"absolute","top":"-50px"}).html("<img src='img/100.png' style='width:100px;' />");
 $(function(){
 	var dH=$(document).height();
