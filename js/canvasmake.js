@@ -35,7 +35,7 @@ var container;
 	    if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) ){  
 	       
 	    } else {  
-	        alert("因手机客户端无法承载资源，请使用电脑客户端浏览器加载，否则可能影响效果！");  
+	        alert("检测到手机客户端无法承载资源，请使用电脑客户端浏览器加载，否则可能影响效果！");  
 	    }  
 	}  
   
